@@ -3,5 +3,11 @@ Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
-  # root "articles#index"
+  root "matches#index"
+  resources :matches do
+    resources :match_maker, only: %i[create]
+  end
+
+  resources :match_maker, only: %i[destroy]
+
 end
