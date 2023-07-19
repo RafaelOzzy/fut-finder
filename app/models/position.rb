@@ -1,3 +1,4 @@
 class Position < ApplicationRecord
-  belongs_to :match, :user
+  belongs_to :match
+  belongs_to :user
 end
