@@ -1,4 +1,4 @@
 class MatchMaker < ApplicationRecord
   has_many :users
-  has_one :match
+  belongs_to :match
 end
