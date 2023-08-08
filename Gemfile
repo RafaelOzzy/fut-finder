@@ -50,8 +50,6 @@ gem "font-awesome-sass", "~> 6.1"
 
 gem 'bootstrap'
 
-gem 'bootstrap-sass'
-
 # Use Sass to process CSS
 gem "sassc-rails"
 
