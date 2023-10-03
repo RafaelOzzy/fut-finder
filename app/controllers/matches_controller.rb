@@ -17,7 +17,7 @@ class MatchesController < ApplicationController
   end
 
   def create
-    @match = Match.new(match_params)
+    @match = current_user.matches.build(match_params)
 
     if @match.save
       redirect_to match_path(@match), notice: "Partida criada com sucesso!"
