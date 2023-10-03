@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "matches#index"
   resources :matches do
-    resources :match_maker, only: %i[create]
+    resources :match_maker, only: %i[create edit update]
   end
 
   resources :match_maker, only: %i[destroy]
