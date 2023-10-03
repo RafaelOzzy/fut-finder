@@ -1,0 +1,21 @@
+<div class="container">
+  <h3>Crie uma nova partida</h3>
+  <div class="match-container">
+   <%= simple_form_for @match do |f| %>
+    <div class="form-inputs">
+    <%= f.input :datetime, label: 'Data'  %>
+    <%= f.input :address, label: 'Endereço' %>
+    <%= f.input :price, label: 'Valor da Pelada' %>
+    <div class="d-flex">
+      <%= f.input :bbq, label: 'Tem churras?' %>
+      <%= f.input :goalkeaper, label: 'Tem goleiro fixo?' %>
+    </div>
+    <%= f.input :field_type, label: 'Tipo de Campo' %>
+    </div>
+
+    <div class="form-actions">
+      <%= f.button :submit %>
+    </div>
+  <% end %>
+  </div>
+</div>
